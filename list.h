@@ -204,4 +204,17 @@ char *recursivelistToString(list l, char *buffer, int i);
  */
 char *listToString(list l);
 
+/*
+ * Function:  addList 
+ * --------------------
+ * a function that sums the elements from two lists
+ * using decimal notation
+ *
+ *  l: the leftmost list to be used in the sum
+ *  r: the rightmost list to be used in the sum
+ *
+ *  returns: a list as the result of th sum of two lists
+ */
+list addList(list l, list r, int carry);
+
 #endif

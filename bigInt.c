@@ -20,16 +20,6 @@ list getDigits(bigInt x)
     return x->digits;
 }
 
-int soma(int a, int b)
-{
-    return a + b;
-}
-
-int subtracao(int a, int b)
-{
-    return a - b;
-}
-
 bigInt addBig(bigInt x, bigInt y)
 {
 
@@ -51,36 +41,6 @@ bigInt addBig(bigInt x, bigInt y)
     list result = addList(l, r, 0);
 
     return newBigInt(result);
-}
-
-list addList(list l, list r, int carry)
-{
-    if (r == NULL && l == NULL)
-    {
-        if (carry == 1)
-        {
-            return newlist(carry, NULL);
-        }
-
-        return NULL;
-    }
-
-    if (r == NULL)
-    {
-        return newlist(head(l) + carry, tail(l));
-    }
-
-    int sum = head(l) + head(r) + carry;
-
-    int car = 0;
-
-    if (sum > 9)
-    {
-        car = 1;
-        sum = sum % 10;
-    }
-
-    return newlist(sum, addList(tail(l), tail(r), car));
 }
 
 

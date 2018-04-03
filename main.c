@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "bigInt.h"
 #include "fibo.h"
 #define RED "\033[31m" /* Red */
 #define RESET "\033[0m"

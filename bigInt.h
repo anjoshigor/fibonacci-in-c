@@ -8,8 +8,6 @@ typedef struct bigInt
     list digits;
 } * bigInt;
 
-typedef list bigNum;
-
 list addList(list l, list r, int carry);
 
 bigInt newBigInt(list digits);
